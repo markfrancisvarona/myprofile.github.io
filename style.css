@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Handjet:wght@300;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.max-width{
+	max-width: 1300;
+	padding: 0 60px;
+	margin: auto;
+}
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	background: none;
+	z-index: 1;
+}
+.navbar.sticky{
+	background: black;
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .menu li{
+	font-family: 'Handjet';
+	list-style: none;
+	display: inline-block;
+}
+.navbar img{
+	padding: 3px;
+	height: 32px;
+	width: 32px;
+}
+
+/*menu button*/
+.menu-btn{
+	cursor: pointer;
+}
+
+.navbar .menu li a{
+	display: block;
+	color: whitesmoke;
+	font-size: 14px;
+	font-weight: 800;
+	margin-left: 60px;
+	transition: all .5s ease;
+}
+.navbar .menu li a:hover{
+	color: black;
+}
+.home{
+	display: flex;
+	background: url("images/banner.jpg") no-repeat center;
+	height: 100vh;
+	color: black;
+	min-height: 500px;
+	background-size: cover;
+	background-attachment: scroll;
+	font-family: 'Anton';
+}
+.home .max-width{
+	margin: auto 50px 160px;
+
+}
+.home .home-content .text-1{
+	font-size: 50px;
+}
+.home .home-content .text-2{
+	font-size: 150px;
+}
+.home .home-content .text-3{
+	font-size: 50px;
+}
+.home .home-content a{
+	display: inline-block;
+	color: white;
+	background: #FF0000;
+	font-size: 18px;
+	padding: 5px 20px;
+	margin-top: 100px;
+	border-radius: 10px;
+	transition: all .5s ease;
+}
+
+.home .home-content a:hover{
+	background: blue;
+	font-size: 25px;
+}
+.about{
+	display: flex;
+	background: url("images/banner-3.jpg") no-repeat center;
+	min-height: 500px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.about .title{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/* about section*/
+
+.about .about-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+section{
+	padding: 100px 0;
+}
+.about .about-content .columnleft{
+	width: 45%;
+}
+.about .about-content .columnleft img{
+	height: 350px;
+	width: 250px;
+	object-fit: cover;
+	border-radius: 3px;
+}
+.about .about-content .columnright{
+	width: 55%;
+	text-align: center;
+}
+
+.about .about-content .columnright p{
+	text-align: justify;
+	margin-top: 30px;
+}
+
+/* style for linux section */
+.linux{
+	color: black;
+	background: lightblue;
+}
+.linux .title{
+	font-family: 'Anton';
+	color: black;
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 40px;
+}
+
+.linux .linux-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 10px;
+}
+.linux .linux-content .card{
+	width: 100%;
+	width: calc(30% - 0px);
+	background: whitesmoke;
+	text-align: center;
+	border-radius: 5px;
+	height: 400px;
+}
+
+.linux .linux-content .card:hover{
+	background: lightyellow;
+}
+
+.linux .linux-content .card img{
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+.linux .linux-content .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 5px;
+	margin-top: 30px;
+}
+
+.linux .linux-content p{
+	font-size: 14px;
+}
+
+.linux .linux-content .card .box{
+	transition: all 0.3s ease;
+	padding: 50px;
+}
+
+.linux .linux-content .card .box:hover{
+	transform: scale(1.2);
+}
+
+/* Skills section */
+.apache{
+	min-height: 660px;
+	font-size: 14px;
+	background: url("images/banner-4.jpg"); repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.apache .title{
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 40px;
+}
+.apache .apache-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 20px;
+}
+.apache .apache-content .columnright{
+	width: calc(50% - 30px);
+}
+.apache .apache-content .columnleft .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.apache .apache-content .columnleft{
+	text-align: justify;
+	font-size: 14px;
+}
+.apache .apache-content .columnleft a{
+	display: inline-block;
+	color: white;
+	background: #FF0000;
+	font-size: 18px;
+	padding: 5px 20px;
+	margin-top: 100px;
+	border-radius: 2px;
+}
+.apache .apache-content .columnright .bar{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 800;
+}
+.apache .apache-content .columnright .info{
+	display: flex;
+	margin-bottom: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
+.apache .apache-content .columnright .info:hover{
+	color: red;
+}
+.apache .apache-content .columnright .span{
+	font-size: 14px;
+	padding: 5px;
+}
+.apache .apache-content .columnright .line{
+	height: 10px;
+	width: 100%;
+	background: lightgray;
+	position: relative;
+}
+.apache .apache-content .columnright .line::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background: red;
+}
+.apache .apache-content .columnright .html::before{
+	width: 80%;
+}
+.apache .apache-content .columnright .css::before{
+	width: 80%;
+}
+.apache .apache-content .columnright .js::before{
+	width: 80%;
+}
+.apache .apache-content .columnright .php::before{
+	width: 80%;
+}
+.apache .apache-content .columnright .sql::before{
+	width: 80%;
+}
+
+/* Contact Us */
+
+.mysql{
+	background: lightblue;
+}
+.mysql .title{
+	font-family: 'Anton';
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+.mysql .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;	
+}
+.mysql .contact-content .column{
+	width: calc(50% - 30px);
+}
+.mysql .contact-content .column .text{
+	font-size: 24px;
+	font-weight: 800;
+	margin: 10px 0;
+	color: red;
+}
+.mysql .contact-content .left p{
+	font-size: 12px;
+	text-align: justify;
+}
+.mysql .contact-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+}
+.mysql .contact-content .row .info{
+	margin-left: 15px;
+}
+.mysql .contact-content .left img{
+	height: 30px;
+	width: 30px;
+}
+.mysql .contact-content .info .head{
+	color: red;
+	font-size: 12px;
+	font-weight: 800;
+	padding: 2px 0;
+}
+.mysql .contact-content .info .sub-title{
+	font-weight: 800;
+	font-size: 14px;
+}
+.mysql .right form .fields{
+	display: flex;
+}
+.mysql .right form .field,
+.mysql .right form .fields .field{
+	height: 45px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.mysql .right form .textarea{
+	height: 80px;
+	width: 100%;
+}
+.mysql .right form .name{
+	margin-right: 10px;
+}
+.mysql .right form .email{
+	margin-left: 10px;
+}
+.mysql .right form .field input,
+.mysql .right form .textarea textarea{
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+	outline: none;
+	padding: 0 15px;
+}
+.mysql .right form .field input:focus,
+.mysql .right form .textarea textarea:focus{
+	border-color: red;
+}
+.mysql .right form .textarea textarea{
+	padding-top: 10px;
+	resize: none;
+}
+.mysql .contact-content .right form .button button{
+	background: red;
+	height: 25px;
+	width: 100px;
+	border-radius: 3px;
+	border-width: 0px;
+	color: whitesmoke;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.mysql .contact-content .right form .button button:hover{
+	background: darkred;
+	cursor: pointer;
+}
+/* Added August 30, 2023 */
+
+
+
+footer{
+	text-align: center;
+	background: black;
+	font-size: 14px;
+	padding: 10px 0px;
+	color: whitesmoke;
+}
+footer p span a{
+	color: tomato;
+}
+footer p span a:hover{
+	text-decoration: underline;
+}
+
+@media (max-width: 1920px){
+	.home .max-width{
+		margin-left: 0px;
+	}
+	.menu-btn{
+		display: none;
+		z-index: 999;
+	}
+}
+@media (max-width: 700px){
+	.about .about-content .columnleft img{
+		height: 350px;
+		width: 350px;
+	}
+}
+@media (max-width 991px){
+	.max-width{
+		padding: 0 50px;
+	}
+}
+@media (max-width: 947px){
+	.home .home-content .text-2{
+		font-size: 50px;
+	}
+	.home .home-content a{
+		font-size: 18px;
+		padding: 10px 30px;
+	}
+	.max-width{
+		max-width: 930px;
+	}
+	.about .about-content .columnright{
+		width: 100%;
+		flex: 100%;
+	}
+	.about .about-content .columnleft{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto 60px;
+	}
+	.linux .linux-content .card{
+		width: calc(50% - 10px);
+		margin-bottom: 35px;
+	}
+	.apache .apache-content .columnright,
+	.apache .apache-content .columnleft,
+	.mysql .contact-content .column{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+}
+@media (max-width: 690px){
+	.max-width{
+		padding: 0 23px;
+	}
+	.linux .linux-content .card{
+		width: 100%;
+	}
+}
+@media (max-width: 500px){
+	.mysql .right form .fields{
+		flex-direction: column;
+	}
+	.mysql .right form .name,
+	.mysql .right form .email{
+		margin: 0px;
+	}
+}
+@media (max-width: 600px){
+	.menu-btn{
+		display: block;
+		z-index: 999;
+	}
+	.navbar .menu{
+		position: fixed;
+		height: 80vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: black;
+		opacity: 70%;
+		text-align: center;
+		padding-top: 100px;
+		transition: all 0.3s ease;
+	}
+	.navbar .menu.active{
+		left: 0%;
+	}
+
+	.navbar .menu li{
+		display: block;
+	}
+	.navbar .menu li a{
+		display: inline-block;
+		margin: 20px;
+	}
+}
